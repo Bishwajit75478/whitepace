@@ -1,0 +1,79 @@
+/* 
+043873
+
+4F9CF9
+
+FFE492
+
+font-family: 'DM Sans', sans-serif;
+font-family: 'Inter', sans-serif;
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Inter:wght@400;500;700&display=swap');
+ /* 
+ basic css
+ */
+ body{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+    background-color: rgb(205, 205, 225);
+    color: white;
+ }
+ .theme-button{
+   display: inline-block;
+   background-color: #4f9cf9;
+   border-radius: 8px;
+   padding: 16px 24px !important;
+   margin-left: 24px;
+ }
+ .theme-button-two{
+  display: inline-block;
+  background-color:#FFE492;
+  color: #043873 !important;
+  border-radius: 8px;
+  padding: 16px 24px !important;
+  margin-left: 24px;
+}
+ .theme-button img {
+  margin-left: 10px;
+ }
+
+ /* headercss */
+ .header-area{
+background-color:#043873 ;
+padding: 16px;
+ }
+ .header-area .nav-link{
+   color: aliceblue;
+   font-family: 'DM Sans', sans-serif;
+   font-weight: 500;
+   padding: 16px 24px !important;
+ }
+.header-area .navbar-toggler{
+  border: none;
+  box-shadow: none;
+}
+@media (max-width: 991px){
+  .theme-button{
+    width:100% ;
+    text-align: center;
+    margin-left: 0;
+    margin-top: 15px;
+  }
+  .theme-button-two{
+    width: 100%;
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 15px;
+ }
+ .header-area .nav-link{
+  padding: 16px 0px !important;
+  position: relative;
+}
+.header-area .nav-link::after{
+  position: absolute;
+  right: 12px;
+}
+}
