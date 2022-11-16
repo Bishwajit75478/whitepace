@@ -20,13 +20,15 @@ font-family: 'Inter', sans-serif;
     color: white;
     background-color: rgb(205, 205, 225);
     color: white;
+    line-height: 1.7;
  }
  .theme-button{
    display: inline-block;
    background-color: #4f9cf9;
    border-radius: 8px;
    padding: 16px 24px !important;
-   margin-left: 24px;
+   text-decoration: none;
+   color: white;
  }
  .theme-button-two{
   display: inline-block;
@@ -34,13 +36,35 @@ font-family: 'Inter', sans-serif;
   color: #043873 !important;
   border-radius: 8px;
   padding: 16px 24px !important;
-  margin-left: 24px;
 }
  .theme-button img {
   margin-left: 10px;
  }
-
- /* headercss */
+ .theme-text h3{
+  font-size: 68px;
+  color:#212529;
+  margin-bottom: 15px;
+ }
+ .theme-text p{
+  color:#212529;
+ }
+ .theme-text h3 span{
+  position: relative;
+  z-index: 1;
+ }
+ .theme-text h3 span::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 60px;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  background-image: url(img/element.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+ }
+ /* header area css */
  .header-area{
 background-color:#043873 ;
 padding: 16px;
@@ -50,6 +74,12 @@ padding: 16px;
    font-family: 'DM Sans', sans-serif;
    font-weight: 500;
    padding: 16px 24px !important;
+ }
+ .header-area .theme-button{
+  margin-left: 24px;
+ }
+ .header-area .theme-button-two{
+  margin-left: 24px;
  }
 .header-area .navbar-toggler{
   border: none;
@@ -76,4 +106,48 @@ padding: 16px;
   position: absolute;
   right: 12px;
 }
+.header-area .theme-button{
+  margin-left: 0;
+ }
+ .header-area .theme-button-two{
+  margin-left: 0;
+ }
+}
+/* header css end */
+
+/* hero css */
+.hero-area{
+  padding: 140px 0;
+  background-image: url(img/hero-section.png);
+  background-size: cover;
+  background-position: center;
+}
+.hero-text h3{
+font-weight: 700;
+font-size: 52px;
+line-height: 80px;
+}
+.hero-area .theme-button{
+  margin-top: 30px;
+}
+@media (max-width: 991px){
+  .hero-area{
+    padding: 80px 0;
+  }
+  .hero-text {
+    text-align: center;
+  }
+  .hero-text h3 {
+    font-size: 36px;
+  }
+  .hero-area.theme-button{
+    margin-bottom: 50px;
+  }
+}
+/* hero area end */
+
+/*start management-area */
+.management-area{
+  background-color: white;
+  padding: 140px 0;
 }
