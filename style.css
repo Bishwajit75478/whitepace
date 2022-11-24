@@ -179,11 +179,10 @@ background-position: bottom;
 }
 @media (max-width: 991px){
   .management-area{
-    padding:60px;
-    text-align: center;
+    padding:60px 0px;
   }
   .work-management{
-   padding:60px;
+   padding:60px 0px;
   }
   .management-area .theme-button {
     margin-bottom: 50px;
@@ -193,7 +192,6 @@ background-position: bottom;
 .extension-area{
   padding: 140px 0;
   background-color: #043873;
-  text-align: center;
 }
 .extension-area .theme-text h3 span::after{
   top: 40px;
@@ -220,12 +218,11 @@ background-position: bottom;
  /* Customise-area css */
  .Customise-area{
   background-color: azure;
-  padding: 140px;
-  text-align: center;
+  padding: 140px 0;
  }
  @media (max-width: 991px){
   .Customise-area{
-    padding: 80px;
+    padding: 80px 0;
    }
  }
  /* pricing area css */
