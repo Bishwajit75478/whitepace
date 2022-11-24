@@ -73,6 +73,14 @@ font-family: 'Inter', sans-serif;
   background-size: cover;
   background-repeat: no-repeat;  
  }
+ @media (max-width: 991px){
+.theme-text{
+  text-align: center;
+}
+.theme-text h3{
+  font-size: 32px;
+}
+ }
 
  /* header area css */
  .header-area{
@@ -96,13 +104,13 @@ padding: 16px;
   box-shadow: none;
 }
 @media (max-width: 991px){
-  .theme-button{
+  .header-area .theme-button{
     width:100% ;
     text-align: center;
     margin-left: 0;
     margin-top: 15px;
   }
-  .theme-button-two{
+  .header-area .theme-button-two{
     width: 100%;
     text-align: center;
     margin-left: 0px;
@@ -114,7 +122,7 @@ padding: 16px;
 }
 .header-area .nav-link::after{
   position: absolute;
-  right: 12px;
+  right: 25px;
 }
 .header-area .theme-button{
   margin-left: 0;
@@ -172,6 +180,7 @@ background-position: bottom;
 @media (max-width: 991px){
   .management-area{
     padding:60px;
+    text-align: center;
   }
   .work-management{
    padding:60px;
@@ -184,6 +193,7 @@ background-position: bottom;
 .extension-area{
   padding: 140px 0;
   background-color: #043873;
+  text-align: center;
 }
 .extension-area .theme-text h3 span::after{
   top: 40px;
@@ -211,6 +221,7 @@ background-position: bottom;
  .Customise-area{
   background-color: azure;
   padding: 140px;
+  text-align: center;
  }
  @media (max-width: 991px){
   .Customise-area{
@@ -342,6 +353,7 @@ background-position: bottom;
 }
 .apps-area h3{
   color: white;
+
 }
 .apps-area p{
   color: white;
