@@ -46,7 +46,7 @@ font-family: 'Inter', sans-serif;
   padding: 16px 24px !important;
   text-decoration: none;
 }
- .theme-button img {
+ .theme-button i {
   margin-left: 10px;
  }
  .theme-text h3{
@@ -73,14 +73,7 @@ font-family: 'Inter', sans-serif;
   background-size: cover;
   background-repeat: no-repeat;  
  }
- @media (max-width: 991px){
-  .theme-text{
-    text-align: center;
-  }
- }
- .theme-text h3{
-  font-size: 36px;
- }
+
  /* header area css */
  .header-area{
 background-color:#043873 ;
@@ -171,6 +164,11 @@ line-height: 80px;
 .work-management{
   margin-top: 100px;
 }
+.work-managemen .theme-text h3 span::after{
+background-image: url(img/work-element.png);
+background-size: contain;
+background-position: bottom;
+}
 @media (max-width: 991px){
   .management-area{
     padding:60px;
@@ -187,6 +185,14 @@ line-height: 80px;
   padding: 140px 0;
   background-color: #043873;
 }
+.extension-area .theme-text h3 span::after{
+  top: 40px;
+}
+.extension-area .theme-text h3 span::after{
+  background-image: url(img/extension-element.png);
+  background-size: contain;
+  background-position: bottom;
+  }
 .extension-area .theme-text h3{
   color:white;
  }
@@ -241,6 +247,8 @@ line-height: 80px;
  .single-pricing ul li {
   list-style: none;
   margin-bottom: 28px;
+  display: flex;
+  align-items: center;
  }
  .single-pricing ul li:last-child {
   margin: 0;
@@ -253,6 +261,15 @@ line-height: 80px;
  .special-pricing h2{
   color: #FFE492;
  }
+ .single-pricing img {
+  height: 21px !important;
+  width: 21px !important;
+  margin-right: 10px;
+ }
+ .pricing-area .owl-stage{
+  display: flex;
+  align-items: center;
+ }
  @media (max-width: 991px){
   .pricing-area{
     padding: 80px 0;
@@ -260,6 +277,19 @@ line-height: 80px;
    .single-pricing{
     margin-bottom: 40px;
    }
+   .pricing-area .owl-dots{
+    text-align: center;
+  }
+  .pricing-area .owl-dots button{
+    height: 15px;
+    width: 15px;
+    background-color: #4F9CF9 !important;
+    border-radius: 50px;
+    margin: 0 5px;
+  }
+  .pricing-area .owl-dots button.active{
+    background-color: #043873 !important;
+  }
  }
  /* your-work-area css */
  .your-work-area {
@@ -306,9 +336,9 @@ line-height: 80px;
 /* apps area css */
 .apps-area {
   padding: 140px 0;
-  background-image: url(img/apps\ bd.png);
+  background-image: url("img/apps-bd.png");
   background-position: center;
-  background-size: contain;
+  background-size: cover;
 }
 .apps-area h3{
   color: white;
@@ -335,21 +365,23 @@ line-height: 80px;
 .single-testimonial{
 background: #4f9cf9;
 box-shadow: 15px 10px 50px rgba(0, 0, 0, 0.1);
-border-radius: 10px
+border-radius: 10px;
 padding: 50px 30px;
-color: #212529;
+cursor: pointer;
+}
+.single-testimonial:hover{
+  background-color: rgb(11, 160, 83);
+  color: #212529;
+  padding: 30px 20px;
 }
 .testimonial-text{
   border-bottom: 1px solid white;
 }
-.testimonial-text img{
-margin-bottom: 40px;
-height: 60PX;
-width: auto !important;
+.testimonial-text i{
+  font-size: 60px;
 }
 .testimonial-text p{
   margin-bottom: 40px;
-  color: white;
 }
 .testimonial-author{
   margin-top: 40px;
@@ -371,11 +403,11 @@ color: white;
 .testimonial-area .owl-dots button{
   height: 15px;
   width: 15px;
-  background-color: #043873 !important;
+  background-color: #4F9CF9 !important;
   border-radius: 50px;
   margin: 0 5px;
 }
-.testimonial-area .owl-dots button.activ{
+.testimonial-area .owl-dots button.active{
   background-color: #043873 !important;
 }
 @media (max-width: 991px){
@@ -460,6 +492,29 @@ list-style: none;
 font-size: 28px;
 margin-bottom: 15px;
 }
+.footer-bottom {
+  border-top: 1px solid #4F9CF9;
+  padding: 32px 0;
+}
+.footer-lan a{
+  text-decoration: none;
+  color: #fff;
+}
+.footer-lan .dropdown-menu a{
+  color: #212529;
+}
+.footer-lan i{
+  margin-right: 15px;
+}
+.footer-social{
+  text-align: right;
+}
+.footer-social a{
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  margin-left: 32px;
+}
 @media (max-width: 991px){
 .footer-top {
   text-align: center;
@@ -473,4 +528,22 @@ margin-bottom: 15px;
 .footer-contact {
   margin-top: 40px;
 }
+.footer-bottom{
+  border-top: none;
 }
+.footer-lan{
+  text-align: center;
+}
+.footer-copyright{
+  padding: 32px 0;
+}
+.footer-social{
+  text-align: center;
+  border-top: 1px solid #4f9cf9;
+  padding: 32px;
+}
+.footer-social a {
+margin: 0 10px;
+}
+}
+
